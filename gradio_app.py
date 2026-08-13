@@ -135,16 +135,6 @@ def format_output(data):
     return "\n".join(output_lines)
 
 
-# Path to your logos.png file
-initial_image_path = "logos.png"
-
-# Encode the image to base64, so it can be used by Gradio.
-with open("logos.png", "rb") as image_file:
-    encoded_string = base64.b64encode(image_file.read()).decode()
-
-# Create HTML code to display the image. Needs to be done this way so that Gradio accepts it.
-img_html = f"<img src='data:image/png;base64,{encoded_string}' style='max-width: 600px; height: auto;'>"
-
 # Create the Gradio interface
 iface = gr.Interface(
     fn=lambda: format_output(fetch_weather_data()),  # Function to run when "Generate" is clicked
@@ -152,9 +142,6 @@ iface = gr.Interface(
     outputs=gr.Textbox(lines=8),  # Output is plain text.
     title="Weather Data Fetcher",  # Title of the App
     description=(
-        "<div>"
-        f"{img_html}"
-        "</div>"
         "<p>Click the <strong>Generate</strong> button to retrieve the latest real-time and predicted precipitation data.</p>"
         "<div style='font-size: 0.9em; color: #666;'>"
         "This application uses Helsinki time, and the times are automatically adjusted for daylight saving time."
@@ -164,14 +151,6 @@ iface = gr.Interface(
         "<a href='https://en.ilmatieteenlaitos.fi/open-data' target='_blank'>Finnish Meteorological Institute (FMI)</a>, "
         "licensed under <a href='https://creativecommons.org/licenses/by/4.0/' target='_blank'>CC BY 4.0</a>."
        "</div>"
-    ),
-    article=(
-        "<div style='margin-top: 5px; text-align: left;'>"
-        "<p style='font-size: 0.9em;'>Developed by <a href='https://www.xamk.fi/en/project/dame/' target='_blank'>DAME-project</a> (South Savo Data Economy Accelerator "
-        "– Shared Data as a Joint Success Factor), South-Eastern Finland University of Applied Sciences, Digital Information Management Research Centre Digitalia, "
-        "in partnership with City of Mikkeli, MikseiMikkeli Oy, Mipro Oy, Rambøll Group A/S, and Mikkeli Water Company (Mikkelin Vesilaitos). "
-        "<strong>Financier and main source of funding:</strong> Centre for Economic Development, Transport and the Environment (ELY Centre); European Regional Development Fund (ERDF).</p>"
-        "</div>"
     ),
 
     flagging_mode="never" # Disable Gradio's default flagging feature
