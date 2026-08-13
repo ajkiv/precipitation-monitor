@@ -64,7 +64,7 @@ cd <repo-folder>
 ```
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 Required packages:
 - gradio
@@ -105,32 +105,45 @@ This will start a local server and open the app in your browser.
 
 ## Example Output
 ```
-[Actual] Mikkeli lentoasema: Total = 2.0 mm (No Warning), Time Range: 2025-11-10 09:00 to 2025-11-10 10:00
-[Prediction] Mikkeli: Total = 4.5 mm (No Warning), Time Range: 2025-11-10 11:00 to 23:00
+[Actual] Puumala: Total = 0.0 mm (No Warning), Time Range: 2026-08-13 09:00 to 2026-08-13 11:00
+[Actual] Mikkeli lentoasema: Total = 2.0 mm (No Warning), Time Range: N/A to N/A
+[Actual] Heinola Asemantaus: Total = 0.0 mm (No Warning), Time Range: 2026-08-13 09:00 to 2026-08-13 11:00
+[Actual] Kouvola Utti Lentoportintie: Total = 0.0 mm (No Warning), Time Range: N/A to N/A
+[Actual] Lappeenranta lentoasema: Total = 0.0 mm (No Warning), Time Range: 2026-08-13 09:00 to 2026-08-13 11:00
+[Actual] Varkaus Kosulanniemi: Total = 0.0 mm (No Warning), Time Range: 2026-08-13 09:00 to 2026-08-13 11:00
+[Actual] Joutsa Savenaho: Total = 0.0 mm (No Warning), Time Range: 2026-08-13 09:00 to 2026-08-13 11:00
+[Prediction] Mikkeli: Total = 4.5 mm (No Warning), Time Range: 2026-08-13 11:00 to 23:00 
 ```
 
 ---
 
 ## Authors and acknowledgment
-Developed by **DAME project** (South Savo Data Economy Accelerator – Shared Data as a Joint Success Factor), South-Eastern Finland University of Applied Sciences, Digital Information Management Research Centre Digitalia, in partnership with 
+Application developed by **Antti Kiviniemi** as part of the **DAME project** 
+(South Savo Data Economy Accelerator – Shared Data as a Joint Success Factor), 
+South-Eastern Finland University of Applied Sciences, Digital Information 
+Management Research Centre Digitalia, in partnership with 
 - City of Mikkeli
 - MikseiMikkeli Oy
 - Mipro Oy
 - Rambøll Group A/S
 - Mikkeli Water Company
 
-The project is co‑funded by the European Union. The funding has been granted by the Centre for Economic Development, Transport and the Environment for South Savo from the European Regional Development Fund.
+The DAME-project is co‑funded by the European Union. The funding has been granted by the Centre for Economic Development, Transport and the Environment for South Savo from the European Regional Development Fund.
 
 Data provided by https://en.ilmatieteenlaitos.fi/open-data, licensed under https://creativecommons.org/licenses/by/4.0/.
 
+---
+
 ## Contributors
 
-- **Author & Original Creator:** Originally developed by Antti Kiviniemi during a role at Xamk (DAME project, 2024–2025).
+- **Antti Kiviniemi** — Author & Original Creator (all code in this repository)
+
+---
 
 ## License
 
-MIT License
-Copyright (c) 2025 South-Eastern Finland University of Applied Sciences (Xamk)
-Copyright (c) 2026 Antti Kiviniemi
+MIT License Copyright (c) 2025 South-Eastern Finland University of Applied Sciences (Xamk)
+
+MIT License Copyright (c) 2026 Antti Kiviniemi
 
 See [LICENSE](./LICENSE) for full details.

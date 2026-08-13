@@ -1,3 +1,13 @@
+# Author & Original Creator: Antti Kiviniemi
+#
+# License: 
+#   MIT (c) 2025 South-Eastern Finland University of Applied Sciences (Xamk)
+#   MIT (c) 2026 Antti Kiviniemi 
+#   (see LICENSE for details)
+#
+# Description: Creates a Gradio web application that fetches and displays both actualized and 
+#              predicted precipitation data from the Finnish Meteorological Institute (FMI)
+
 import gradio as gr # Gradio is used to create a simple web interface
 from datetime import datetime, timedelta # For handling date and time
 import pytz # For timezone conversion
