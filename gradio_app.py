@@ -158,14 +158,5 @@ iface = gr.Interface(
 )
 
 # Launch the Gradio App
-#if __name__ == "__main__":
-#    iface.launch()
-
-# new version of launch. 
 if __name__ == "__main__":
     iface.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
-
-#if __name__ == "__main__":
-#    iface.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
-
-
