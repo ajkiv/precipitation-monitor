@@ -13,6 +13,7 @@ from datetime import datetime, timedelta # For handling date and time
 import pytz # For timezone conversion
 
 import base64
+import os
 
 
 def format_precip(value):
@@ -157,5 +158,14 @@ iface = gr.Interface(
 )
 
 # Launch the Gradio App
+#if __name__ == "__main__":
+#    iface.launch()
+
+# new version of launch. 
 if __name__ == "__main__":
-    iface.launch()
+    iface.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+
+#if __name__ == "__main__":
+#    iface.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+
+

@@ -51,7 +51,7 @@ THRESHOLD_SEVERE_PEAK=35.0
 
 FMI_BBOX=27.2575,61.6775,27.28,61.7
 
-STATIONS_JSON={"150168": "Puumala", "101398": "Mikkeli lentoasema", "101196": "Heinola Asemantaus", "101219": "Kouvola Utti Lentoportintie", "101237": "Lappeenranta lentoasema", "101421": "Varkaus Kosulanniemi", "101367": "Joutsa Savenaho"}
+STATIONS_JSON={"150168": "Puumala", "101196": "Mikkeli lentoasema AWOS", "855522": "Heinola Asemantaus", "101237": "Kouvola Utti lentoasema", "101191": "Lappeenranta lentoasema", "101421": "Varkaus Kosulanniemi", "101367": "Joutsa Savenaho"}
 ```
 
 ---
